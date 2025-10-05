@@ -1,0 +1,42 @@
+name: interview
+description: AI-powered interview preparation app with LiveKit video and Cerebras AI
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.2
+  
+  # LiveKit for video/audio
+  livekit_client: ^2.0.0
+  
+  # HTTP requests
+  http: ^1.1.0
+  
+  # File picker (latest stable, supports Flutter 3.x and Android/iOS/desktop correctly)
+  file_picker: ^8.0.0
+  
+  # Permissions
+  permission_handler: ^11.1.0
+  flutter_tts: ^4.2.3
+  speech_to_text: ^7.3.0
+  flutter_dotenv: ^6.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+ 
+  assets:
+    - .env
+  #   - assets/

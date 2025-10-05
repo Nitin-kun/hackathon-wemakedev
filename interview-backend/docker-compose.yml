@@ -1,0 +1,22 @@
+
+
+
+services:
+  backend:
+    build: .
+    ports:
+      - "7880:7880"
+    environment:
+      - NODE_ENV=production
+      - LIVEKIT_API_KEY=${LIVEKIT_API_KEY}
+      - LIVEKIT_API_SECRET=${LIVEKIT_API_SECRET}
+      - LIVEKIT_URL=${LIVEKIT_URL}
+      - CEREBRAS_API_KEY=${CEREBRAS_API_KEY}
+      - PORT=7880
+    volumes:
+      - ./uploads:/app/uploads
+    restart: unless-stopped
+
+
+
+
