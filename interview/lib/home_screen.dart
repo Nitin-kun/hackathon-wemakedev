@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isGeneratingToken = false;
 
   // Update this to your backend URL
-  static const String backendUrl = "http://192.168.31.164:7880";
+  static const String backendUrl = "http://192.168.1.9:7880";
 
   @override
   void dispose() {
